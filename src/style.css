@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-manrope bg-neutral-darkBlue min-h-screen flex justify-center items-center;
+}
