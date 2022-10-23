@@ -8,7 +8,7 @@ const advice = ref('')
 
 const getRandomAdvice = async () => {
   try {
-    const { data: getAdvice } = await axios.get('https://api.adviceslip.com/advice')
+    const { data: getAdvice } = await axios.get(import.meta.env.VITE_ADVICE_APP)
     advice.value = getAdvice.slip
   } catch (error) {
     console.log(error);
